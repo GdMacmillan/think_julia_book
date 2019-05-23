@@ -6,5 +6,13 @@ function divby(a, b)
 end
 
 function ispower(a, b)
-    continue
+    println(a, b)
+    if divby(a, b)
+        if a / b == 1
+            return true
+        else
+            return ispower(a / b, b)
+        end
+    end
+    false
 end
